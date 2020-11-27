@@ -10,6 +10,9 @@
         <v-row justify="center">
           <p class="white--text subheading mt-1">Kenan Erarslan</p>
         </v-row>
+        <v-row justify="center" class="mt-4 mb-3">
+          <Popup/>
+        </v-row>
       </v-col>
       <v-list>
         <v-list-item-group>
@@ -51,7 +54,9 @@
 </template>
 
 <script>
+import Popup from './Popup.vue'
 export default {
+  components: {Popup},
   data() {
     return {
       drawer: false,
